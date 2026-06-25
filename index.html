@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="郑守靖，西安电子科技大学信息力学与感知工程学院教师主页。">
+  <title>郑守靖 | 西安电子科技大学</title>
+  <style>
+:root {
+  --ink: #1f2933;
+  --muted: #667085;
+  --line: #d8e0ea;
+  --paper: #ffffff;
+  --soft: #f5f8fb;
+  --blue: #0b5cad;
+  --blue-deep: #083d77;
+  --red: #b4232f;
+  --teal: #087f7b;
+  --gold: #a16a00;
+  --shadow: 0 18px 45px rgba(31, 41, 51, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--soft);
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(216, 224, 234, 0.85);
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 172px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #fff;
+  background: var(--red);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+  line-height: 1.2;
+}
+
+.brand small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  min-height: 36px;
+  padding: 6px 12px;
+  color: #334155;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.site-nav a:hover,
+.site-nav a.is-active {
+  color: var(--blue);
+  border-bottom-color: var(--red);
+}
+
+.hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+  background-image: url("https://faculty.xidian.edu.cn/zwmb03/images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(6, 31, 55, 0.88), rgba(6, 31, 55, 0.52) 48%, rgba(6, 31, 55, 0.1));
+}
+
+.hero-content {
+  position: relative;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 110px 0 72px;
+  color: #fff;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 8px;
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #ffd9de;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 64px;
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.hero-role {
+  margin: 14px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hero-summary {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: #e8eef5;
+  font-size: 18px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.hero-tags span {
+  padding: 7px 12px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.band {
+  padding: 76px 0;
+}
+
+.overview {
+  background: #fff;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.profile-card {
+  position: sticky;
+  top: 86px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.portrait {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 18%;
+  background: #fff;
+}
+
+.profile-card h2 {
+  margin: 20px 22px 2px;
+  font-size: 26px;
+}
+
+.profile-card > p {
+  margin: 0 22px 18px;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.info-list {
+  margin: 0;
+  padding: 0 22px 22px;
+}
+
+.info-list div {
+  padding: 13px 0;
+  border-top: 1px solid #eef2f6;
+}
+
+.info-list dt {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.info-list dd {
+  margin: 3px 0 0;
+  font-size: 15px;
+}
+
+.section-body h2,
+.section-heading h2,
+.split-layout h2,
+.join h2 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.section-body p,
+.section-heading p,
+.join p {
+  max-width: 830px;
+  margin: 18px 0 0;
+  color: #475467;
+  font-size: 16px;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.metric-grid div {
+  min-height: 104px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f9fbfd;
+}
+
+.metric-grid strong {
+  display: block;
+  color: var(--blue);
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.metric-grid span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.research-band {
+  background: #eef5f8;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.compact-heading {
+  margin-bottom: 24px;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.research-item {
+  min-height: 220px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #d9e5eb;
+  border-radius: 8px;
+}
+
+.research-item span {
+  display: inline-block;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.research-item h3 {
+  margin: 18px 0 10px;
+  font-size: 21px;
+}
+
+.research-item p {
+  margin: 0;
+  color: #536170;
+  font-size: 15px;
+}
+
+.research-figure {
+  margin: 32px 0 0;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #d9e5eb;
+  border-radius: 8px;
+}
+
+.research-figure img {
+  width: 100%;
+  border: 1px solid #eef2f6;
+}
+
+.research-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.publication-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.publication-list li {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.publication-list p {
+  margin: 0;
+}
+
+.pub-year {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 4px 10px;
+  color: #fff;
+  background: var(--blue-deep);
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.split-band {
+  background: #fff;
+}
+
+.split-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.plain-list {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plain-list li {
+  position: relative;
+  padding: 0 0 0 20px;
+  margin: 0 0 14px;
+  color: #475467;
+}
+
+.plain-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+.project-band {
+  background: #f7fafc;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-list article {
+  min-height: 188px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.project-list span {
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.project-list h3 {
+  margin: 14px 0 0;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.timeline article {
+  min-height: 178px;
+  padding: 20px;
+  background: #fff;
+  border-top: 4px solid var(--teal);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.timeline span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.timeline h3 {
+  margin: 14px 0 8px;
+  font-size: 19px;
+}
+
+.timeline p {
+  margin: 0;
+  color: #536170;
+}
+
+.join {
+  background: #0f2d4a;
+  color: #fff;
+}
+
+.join .section-kicker {
+  color: #ffccd2;
+}
+
+.join p {
+  color: #dbe7f0;
+}
+
+.join-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.source-link {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 18px;
+  color: #fff;
+  background: var(--red);
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.source-link:hover {
+  background: #971622;
+}
+
+.site-footer {
+  padding: 26px 0;
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content a {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.footer-content span {
+  margin: 0 8px;
+  color: #98a2b3;
+}
+
+@media (max-width: 980px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .two-column,
+  .split-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    position: static;
+    max-width: 420px;
+  }
+
+  .metric-grid,
+  .research-grid,
+  .timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .container,
+  .hero-content {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .site-header {
+    padding: 10px 14px;
+  }
+
+  .site-nav {
+    gap: 0;
+  }
+
+  .site-nav a {
+    padding: 6px 9px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 560px;
+    align-items: center;
+  }
+
+  .hero-content {
+    padding: 84px 0 46px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-role {
+    font-size: 18px;
+  }
+
+  .hero-summary {
+    font-size: 16px;
+  }
+
+  .band {
+    padding: 54px 0;
+  }
+
+  .section-body h2,
+  .section-heading h2,
+  .split-layout h2,
+  .join h2 {
+    font-size: 28px;
+  }
+
+  .two-column {
+    gap: 34px;
+  }
+
+  .metric-grid,
+  .research-grid,
+  .publication-list li,
+  .project-list,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-list li {
+    gap: 12px;
+  }
+
+  .join-layout,
+  .footer-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .source-link {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand-mark">郑</span>
+      <span>
+        <strong>郑守靖</strong>
+        <small>西安电子科技大学</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#profile">概况</a>
+      <a href="#research">科研方向</a>
+      <a href="#papers">论文</a>
+      <a href="#projects">项目</a>
+      <a href="#experience">经历</a>
+      <a href="#join">招生</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">信息力学与感知工程学院</p>
+        <h1 id="hero-title">郑守靖</h1>
+        <p class="hero-role">华山准聘副教授 · 硕士生导师 · 教学科研岗</p>
+        <p class="hero-summary">
+          面向软物质力学、柔性电子器件力学、固体力学与机器学习，开展水凝胶和软材料疲劳断裂的理论、模拟与应用研究。
+        </p>
+        <div class="hero-tags" aria-label="研究关键词">
+          <span>软物质力学</span>
+          <span>柔性电子器件力学</span>
+          <span>相场疲劳断裂</span>
+          <span>机器学习</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview band" id="profile" aria-labelledby="profile-title">
+      <div class="container two-column">
+        <aside class="profile-card" aria-label="个人信息">
+          <img src="https://faculty.xidian.edu.cn/_resource/fileshow/367fyyMfmyue?randomid=1782190859067" alt="郑守靖肖像" class="portrait">
+          <h2>郑守靖</h2>
+          <p>博士 · 硕士生导师</p>
+          <dl class="info-list">
+            <div>
+              <dt>所在单位</dt>
+              <dd>信息力学与感知工程学院</dd>
+            </div>
+            <div>
+              <dt>学科</dt>
+              <dd>工程力学</dd>
+            </div>
+            <div>
+              <dt>毕业院校</dt>
+              <dd>西安交通大学</dd>
+            </div>
+            <div>
+              <dt>入职时间</dt>
+              <dd>2025-03-01</dd>
+            </div>
+            <div>
+              <dt>办公地点</dt>
+              <dd>新科技楼1109（西）</dd>
+            </div>
+            <div>
+              <dt>邮箱</dt>
+              <dd>zhengshoujing@xidian.edu.cn</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <div class="section-body">
+          <p class="section-kicker">Profile</p>
+          <h2 id="profile-title">个人简介</h2>
+          <p>
+            郑守靖现任西安电子科技大学信息力学与感知工程学院华山准聘副教授、硕士生导师。本科和博士阶段就读于西安交通大学航天航空学院，曾在新加坡南洋理工大学从事研究工作。
+          </p>
+          <p>
+            研究工作聚焦水凝胶、软材料和复杂网络材料的力学行为，重点关注大变形、刺激响应、热力耦合、疲劳断裂和机器学习辅助预测等问题。相关成果发表于 Engineering Fracture Mechanics、Mechanics of Materials、Journal of Applied Mechanics、International Journal of Mechanical Sciences 等期刊。
+          </p>
+          <div class="metric-grid">
+            <div>
+              <strong>12+</strong>
+              <span>高水平期刊论文</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>ESI高被引论文</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>中文专著</span>
+            </div>
+            <div>
+              <strong>200万+</strong>
+              <span>可支配科研经费</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band research-band" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Research</p>
+          <h2 id="research-title">科学研究</h2>
+          <p>围绕软材料、柔性器件与复杂断裂过程，结合理论建模、有限元模拟和数据驱动方法推进交叉研究。</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-item">
+            <span>01</span>
+            <h3>软物质力学</h3>
+            <p>研究水凝胶、聚合物网络等软材料在大变形、疲劳和断裂条件下的力学响应。</p>
+          </article>
+          <article class="research-item">
+            <span>02</span>
+            <h3>柔性电子器件力学</h3>
+            <p>关注柔性结构在服役环境中的变形、可靠性和多物理场耦合问题。</p>
+          </article>
+          <article class="research-item">
+            <span>03</span>
+            <h3>相场疲劳断裂</h3>
+            <p>发展面向水凝胶和软材料的相场断裂建模与有限元二次开发模拟。</p>
+          </article>
+          <article class="research-item">
+            <span>04</span>
+            <h3>机器学习</h3>
+            <p>利用图网络、社区检测与小样本学习方法预测聚合物和复杂网络材料性能。</p>
+          </article>
+        </div>
+
+        <figure class="research-figure">
+          <img src="https://faculty.xidian.edu.cn/_resource/fileshow/1ef3ce9d-a3ef-408b-b491-978e8db17fb6.png" alt="水凝胶大变形相场断裂框架示意图">
+          <figcaption>水凝胶大变形相场断裂框架与有限元开发模拟示意。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="papers" aria-labelledby="papers-title">
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <p class="section-kicker">Publications</p>
+          <h2 id="papers-title">论文成果</h2>
+        </div>
+
+        <ol class="publication-list">
+          <li>
+            <span class="pub-year">2026</span>
+            <p>You H., He L.W., Zheng S.J.（通讯）, and Li H. Facilitating Small-data Deep Learning for Predicting Polymer Mechanical Properties Using Complex Discrete Networks via Community Detection Algorithms. <em>Engineering Fracture Mechanics</em>, Vol. 336, 111984. DOI: 10.1016/j.engfracmech.2026.111984.</p>
+          </li>
+          <li>
+            <span class="pub-year">2025</span>
+            <p>赖声新，马娟，郑守靖，贾凯，韩杰. 热障涂层宏-微观性能的跨尺度预测. <em>复合材料学报</em>.</p>
+          </li>
+          <li>
+            <span class="pub-year">2025</span>
+            <p>You H., Zheng S.J.（通讯）, and Li H. A Network Graph Entropy-based General Model for Soft Polymer Networks. <em>International Journal of Mechanical Sciences</em>, Vol. 305, 110732. DOI: 10.1016/j.ijmecsci.2025.110732.</p>
+          </li>
+          <li>
+            <span class="pub-year">2025</span>
+            <p>You H., Zheng S.J., Lam K.Y., and Li H. Heterogeneous Hydrogel Fracture Simulation Study Using Community Detection. <em>International Journal of Mechanical Sciences</em>, Vol. 286, 109848. DOI: 10.1016/j.ijmecsci.2024.109848.</p>
+          </li>
+          <li>
+            <span class="pub-year">2024</span>
+            <p>Zheng S.J., You H., Lam K.Y., and Li H. Fracture Prediction of Hydrogel Using Machine Learning. <em>Advanced Theory and Simulations</em>, 2300776. DOI: 10.1002/adts.202300776.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band split-band" aria-labelledby="works-title">
+      <div class="container split-layout">
+        <div>
+          <p class="section-kicker">Books</p>
+          <h2 id="works-title">著作成果</h2>
+          <ul class="plain-list">
+            <li>Liu Z.S., Zheng S.J., Li Z.Q., Xu S., Lei J.C., and Toh W. Multiscale modeling of hydrogels. In <em>The Mechanics of Hydrogels</em>, Woodhead Publishing, pp. 187-222. DOI: 10.1016/B978-0-08-102862-9.00012-9, 2022.</li>
+            <li>刘子顺，雷金成，徐帅，郑守靖，李子谦. 《软物质力学-水凝胶大变形》, 西安交通大学出版社, 2022.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="section-kicker">Awards & Service</p>
+          <h2>学术服务与奖励</h2>
+          <ul class="plain-list">
+            <li>国家资助博士后研究人员计划C档资助（2025）。</li>
+            <li>2024年陕西省高等学校科学技术研究优秀成果一等奖。</li>
+            <li>Biosensors、Micromachines 客座编辑，多个力学相关期刊审稿人。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="band project-band" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <p class="section-kicker">Projects</p>
+          <h2 id="projects-title">科研项目</h2>
+        </div>
+
+        <div class="project-list">
+          <article>
+            <span>2026-2028</span>
+            <h3>国家自然科学基金青年科学基金项目（C类）</h3>
+          </article>
+          <article>
+            <span>2026-01-01</span>
+            <h3>教育部海外YC引才计划专项</h3>
+          </article>
+          <article>
+            <span>2026-2028</span>
+            <h3>陕西省“校招共用”引才用才项目</h3>
+          </article>
+          <article>
+            <span>教育部</span>
+            <h3>极端电子器件学科突破先导项目</h3>
+          </article>
+          <article>
+            <span>2026-2027</span>
+            <h3>复杂服役环境重大装备结构强度与寿命全国重点实验室开放课题</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <p class="section-kicker">Experience</p>
+          <h2 id="experience-title">教育与工作经历</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>2025.03 至今</span>
+            <h3>西安电子科技大学</h3>
+            <p>信息力学与感知工程学院，教学科研岗。</p>
+          </article>
+          <article>
+            <span>2022.02 - 2025.02</span>
+            <h3>南洋理工大学</h3>
+            <p>研究工作。</p>
+          </article>
+          <article>
+            <span>2016.09 - 2021.09</span>
+            <h3>西安交通大学</h3>
+            <p>力学，博士研究生毕业，工学博士学位。</p>
+          </article>
+          <article>
+            <span>2012.09 - 2016.06</span>
+            <h3>西安交通大学</h3>
+            <p>飞行器设计与工程，大学本科毕业，工学学士学位。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="join band" id="join" aria-labelledby="join-title">
+      <div class="container join-layout">
+        <div>
+          <p class="section-kicker">Join Us</p>
+          <h2 id="join-title">招生信息</h2>
+          <p>
+            课题组方向包括软物质力学、柔性电子器件力学、固体力学和机器学习。欢迎力学、航空航天、机械等相关专业本科生加入团队，每年计划招收 1-2 名学生。
+          </p>
+        </div>
+        <a class="source-link" href="https://faculty.xidian.edu.cn/ZHENGSHOUJING/zh_CN/index.htm" target="_blank" rel="noreferrer">
+          查看原教师主页
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>内容参考西安电子科技大学教师主页公开信息，页面为本地静态重设计版本。</p>
+      <p>
+        <a href="https://faculty.xidian.edu.cn/ZHENGSHOUJING/zh_CN/index.htm" target="_blank" rel="noreferrer">个人主页</a>
+        <span>/</span>
+        <a href="https://faculty.xidian.edu.cn/ZHENGSHOUJING/zh_CN/zhym/465204/list/index.htm" target="_blank" rel="noreferrer">科学研究</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
+const sections = navLinks
+  .map((link) => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "is-active",
+            link.getAttribute("href") === `#${entry.target.id}`
+          );
+        });
+      });
+    },
+    {
+      rootMargin: "-35% 0px -55% 0px",
+      threshold: 0,
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
+
+</script>
+</body>
+</html>
